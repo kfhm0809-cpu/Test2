@@ -6,8 +6,14 @@
 
 
 # 코드블럭
+```js
+    setInterval(function () {
+        $('.image-slide>ul').animate({ marginTop: -400 }, 1000, function () {
+            $('.image-slide>ul').append($('.image-slide>ul>li').first());
+            $('.image-slide>ul').css('marginTop', 0);
+        })
+    }, 2000);
 ```
-
 
 # 링크와 사진
 [Naver](https://naver.com)
